@@ -1,9 +1,5 @@
 package br.com.valkyrie.unisa.ingrid.backend.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -33,9 +29,9 @@ public class Users {
     private String username;
 
     @Column(name = "created_at")
-    private Date createdAt = new Date();
+    private Date createdAt;
 
     @Column(name = "updated_at")
-    private Date updatedAt = new Date();
+    private Date updatedAt;
     private UsersRoles role;
 }
